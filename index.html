@@ -1,41 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GRBC Modding Works</title>
-    <style>
-        body {
-            background: #151515;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1 {
-            color: #8a9a5b;
-        }
+<title>GRBC Modding Works</title>
 
-        .gallery img {
-            width: 300px;
-            margin: 10px;
-            border-radius: 8px;
-        }
-    </style>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#0f0f0f;
+    color:white;
+    line-height:1.6;
+}
+
+/* HERO */
+
+.hero{
+    height:80vh;
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+        url("gallery/grbc/GRBC_PC_RG.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    color:#c0c0c0;
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.hero-buttons a{
+    text-decoration:none;
+    color:white;
+    background:#556b2f;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:6px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.hero-buttons a:hover{
+    background:#708238;
+    transform:translateY(-2px);
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    background:#151515;
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #2c2c2c;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#90a955;
+}
+
+/* SECTIONS */
+
+section{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    font-size:2.3rem;
+    margin-bottom:15px;
+    color:#90a955;
+    text-align:center;
+}
+
+.section-description{
+    text-align:center;
+    color:#b5b5b5;
+    margin-bottom:45px;
+}
+
+/* GALLERY GRID */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    background:#1a1a1a;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+    border:1px solid #2a2a2a;
+}
+
+.gallery-item:hover{
+    transform:translateY(-5px);
+    border-color:#556b2f;
+}
+
+.gallery-item img{
+    width:100%;
+    display:block;
+}
+
+.gallery-info{
+    padding:18px;
+}
+
+.gallery-info h3{
+    margin-bottom:10px;
+}
+
+.gallery-info p{
+    color:#b0b0b0;
+    font-size:.95rem;
+}
+
+/* CATEGORY COLORS */
+
+.groobycam .section-title{
+    color:#7fa34c;
+}
+
+.rangergreen .section-title{
+    color:#5f7f54;
+}
+
+.grbc .section-title{
+    color:#8a8a8a;
+}
+
+/* ABOUT */
+
+.about-box{
+    background:#181818;
+    border:1px solid #2c2c2c;
+    border-radius:10px;
+    padding:40px;
+    text-align:center;
+    color:#b8b8b8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#151515;
+    text-align:center;
+    padding:35px;
+    color:#777;
+    border-top:1px solid #2c2c2c;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+nav a{
+    display:inline-block;
+    margin:10px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>GRBC Modding Works</h1>
+<!-- HERO -->
 
-<p>
-DayZ modding, camouflage design, and custom re-skins.
-</p>
+<div class="hero">
 
-<div class="gallery">
+    <div class="hero-content">
 
-<img src="gallery/headgear/GRBC_Beret_GC.png">
-<img src="gallery/vests/GRBC_PC_GC.png">
-<img src="gallery/vests/GRBC_PC_RG.png">
+        <h1>GRBC MODDING WORKS</h1>
+
+        <p>
+            DayZ Re-Skins • Camouflage Design • Tactical Equipment Concepts
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#groobycam">GroobyCam</a>
+            <a href="#rangergreen">Ranger Green</a>
+            <a href="#grbc">G.R.B.C.</a>
+        </div>
+
+    </div>
 
 </div>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="#groobycam">GroobyCam</a>
+    <a href="#rangergreen">Ranger Green</a>
+    <a href="#grbc">G.R.B.C.</a>
+    <a href="#about">About</a>
+
+</nav>
+
+<!-- GROOBYCAM -->
+
+<section id="groobycam" class="groobycam">
+
+    <h2 class="section-title">GroobyCam Collection</h2>
+
+    <p class="section-description">
+        Experimental camouflage concepts and custom tactical re-skins.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="gallery/GC/headgear/GRBC_Beret_GC.png">
+            <div class="gallery-info">
+                <h3>GroobyCam Vest</h3>
+                <p>Custom camouflage applied to tactical carrier equipment. Hybrid camouflage and tactical equipment concept.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery/GC/vests/GRBC_PC_GC.png">
+            <div class="gallery-info">
+                <h3>G.R.B.C. GroobyCam</h3>
+                <p>Custom camouflage applied to tactical carrier equipment. Hybrid camouflage and tactical equipment concept.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- RANGER GREEN -->
+
+<section id="rangergreen" class="rangergreen">
+
+    <h2 class="section-title">Ranger Green Collection</h2>
+
+    <p class="section-description">
+        Minimalistic military-style Ranger Green equipment re-skins.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="gallery/rangergreen/rg1.png">
+            <div class="gallery-info">
+                <h3>Ranger Green Carrier</h3>
+                <p>Dark tactical Ranger Green plate carrier concept.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery/rangergreen/rg2.png">
+            <div class="gallery-info">
+                <h3>Ranger Green Backpack</h3>
+                <p>Military-styled equipment redesign with muted tones.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GRBC -->
+
+<section id="grbc" class="grbc">
+
+    <h2 class="section-title">G.R.B.C. Collection</h2>
+
+    <p class="section-description">
+        Black and Ranger Green tactical redesign series.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="gallery/GRBC/vests/GRBC_PC_RG.png">
+            <div class="gallery-info">
+                <h3>G.R.B.C. Ranger Green</h3>
+                <p>Modern black and Ranger Green tactical configuration.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2 class="section-title">About</h2>
+
+    <div class="about-box">
+
+        GRBC Modding Works focuses on custom DayZ tactical equipment
+        re-skins, camouflage development and military-themed visual redesigns.
+        The project combines realistic military aesthetics with original
+        camouflage concepts and immersive gear customization.
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 GRBC Modding Works
+
+</footer>
 
 </body>
 </html>
