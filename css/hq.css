@@ -1,12 +1,13 @@
 /*==================================================================
     G.R.B.C. HEADQUARTERS
-    Home Page Stylesheet
-===================================================================*/
+    Headquarters Stylesheet
+    Version 1.0
+==================================================================*/
 
 
 /*==================================================================
     HERO
-===================================================================*/
+==================================================================*/
 
 .hero{
 
@@ -24,29 +25,29 @@
     background-attachment:fixed;
 
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
 
     text-align:center;
 
-    padding:120px 20px 60px;
+    padding:140px 20px 70px;
 
 }
 
 
 /*==================================================================
     HERO CONTENT
-===================================================================*/
+==================================================================*/
 
 .hero-content{
 
-    width:min(1200px,95%);
+    max-width:1100px;
+
+    margin:auto;
 
 }
 
 .hero h1{
-
-    font-size:5rem;
 
     margin-bottom:15px;
 
@@ -54,17 +55,15 @@
 
 .hero h2{
 
-    font-size:1.6rem;
-
-    margin-bottom:10px;
-
-    letter-spacing:2px;
+    margin-bottom:12px;
 
 }
 
 .subtitle{
 
     color:var(--grbc-green-light);
+
+    font-size:1.05rem;
 
     text-transform:uppercase;
 
@@ -76,9 +75,9 @@
 
 .hero p{
 
-    max-width:900px;
+    max-width:850px;
 
-    margin:0 auto 50px;
+    margin:0 auto 55px;
 
     font-size:1.05rem;
 
@@ -87,7 +86,7 @@
 
 /*==================================================================
     STATUS PANEL
-===================================================================*/
+==================================================================*/
 
 .status-panel{
 
@@ -95,7 +94,7 @@
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:20px;
+    gap:22px;
 
     margin-bottom:60px;
 
@@ -103,13 +102,13 @@
 
 .status-box{
 
-    background:rgba(20,20,20,.92);
+    background:rgba(20,20,20,.94);
 
     border:1px solid var(--border);
 
     border-radius:var(--radius);
 
-    padding:20px;
+    padding:22px;
 
 }
 
@@ -117,13 +116,13 @@
 
     display:block;
 
-    color:#8d8d8d;
+    color:#888;
 
-    font-size:.75rem;
-
-    letter-spacing:3px;
+    font-size:.80rem;
 
     text-transform:uppercase;
+
+    letter-spacing:2px;
 
 }
 
@@ -135,14 +134,14 @@
 
     color:var(--grbc-green-light);
 
-    font-size:1.2rem;
+    font-size:1.15rem;
 
 }
 
 
 /*==================================================================
     COMMAND MODULES
-===================================================================*/
+==================================================================*/
 
 .portal{
 
@@ -154,9 +153,13 @@
 
 }
 
-.module{
+.command-module{
 
-    background:rgba(18,18,18,.94);
+    display:flex;
+
+    flex-direction:column;
+
+    background:rgba(18,18,18,.95);
 
     border:1px solid var(--border);
 
@@ -168,40 +171,53 @@
 
 }
 
-.module:hover{
+.command-module:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
     border-color:var(--grbc-green-light);
 
-    box-shadow:0 0 30px rgba(144,169,85,.15);
+    box-shadow:0 0 25px rgba(144,169,85,.18);
 
 }
 
-.module h3{
+.command-module h3{
 
     margin-bottom:18px;
 
 }
 
-.module p{
+.command-module p{
 
-    min-height:120px;
+    flex:1;
+
+    margin-bottom:28px;
+
+}
+
+.command-module .btn{
+
+    align-self:flex-start;
 
 }
 
 
 /*==================================================================
-    MOBILE
-===================================================================*/
+    FOOTER
+==================================================================*/
 
-@media(max-width:950px){
+footer p{
 
-    .portal{
+    margin:4px 0;
 
-        grid-template-columns:1fr;
+}
 
-    }
+
+/*==================================================================
+    TABLET
+==================================================================*/
+
+@media(max-width:1000px){
 
     .status-panel{
 
@@ -209,7 +225,18 @@
 
     }
 
+    .portal{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
+
+
+/*==================================================================
+    MOBILE
+==================================================================*/
 
 @media(max-width:700px){
 
@@ -217,17 +244,27 @@
 
         background-attachment:scroll;
 
-    }
-
-    .hero h1{
-
-        font-size:3rem;
+        padding:160px 20px 60px;
 
     }
 
-    .hero h2{
+    .subtitle{
 
-        font-size:1.2rem;
+        font-size:.90rem;
+
+        letter-spacing:3px;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .command-module{
+
+        padding:28px;
 
     }
 
