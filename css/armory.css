@@ -1,0 +1,15 @@
+/* Armory-only */
+.hero{height:80vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),url("../gallery/page/GC_OG.png")}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,240px));justify-content:center;gap:20px}
+.gallery-item{background:#1a1a1a;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:var(--transition)}
+.gallery-item:hover{transform:translateY(-5px);border-color:var(--grbc-green-light)}
+.gallery-item img{width:100%;height:240px;object-fit:cover}
+.about-box,.commission-box,.coming-soon{background:#181818;border:1px solid var(--border);border-radius:10px}
+#lightbox{position:fixed;inset:0;display:none;justify-content:center;align-items:center;background:rgba(0,0,0,.92);z-index:99999}
+.weapons{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/winter_camo_002.png") center/cover}
+.groobycam{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/GC_OG.png") center/cover}
+.rangergreen{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/Mapa_1024x2048.png") center/cover}
+.grbc{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/MC_1.png") center/cover}
+.items{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/wz.93_Pantera.png") center/cover}
+.apparel{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/M81_Woodland.png") center/cover}
+.camos{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/GC3_MC.png") center/cover}
