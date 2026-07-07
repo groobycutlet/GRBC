@@ -66,21 +66,33 @@ body{
     TYPOGRAPHY
 ==================================================================*/
 
+/*=========================================================
+    PAGE TITLES
+=========================================================*/
+
 h1{
 
     color:var(--grbc-green-light);
 
-    font-size:5rem;
+    font-size:4.5rem;
 
     font-weight:700;
 
-    letter-spacing:6px;
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    line-height:1;
+
+    margin-bottom:15px;
 
 }
 
 h2{
 
-    color:var(--text);
+    color:white;
+
+    font-size:2rem;
 
     font-weight:400;
 
