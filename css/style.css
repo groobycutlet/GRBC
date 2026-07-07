@@ -389,3 +389,21 @@ footer p{
     }
 
 }
+
+/*==================================================================
+    ACTIVE NAVIGATION
+==================================================================*/
+
+.nav-links a.active{
+
+    color:var(--grbc-green-light);
+
+    font-weight:600;
+
+}
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
