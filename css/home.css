@@ -121,3 +121,61 @@
     margin-top:20px;
 
 }
+
+/*=========================================================
+    SUBTITLE
+=========================================================*/
+
+.subtitle{
+
+    color:var(--grbc-green-light);
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+
+}
+
+/*=========================================================
+    STATUS PANEL
+=========================================================*/
+
+.status-panel{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    margin:45px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.status-panel div{
+
+    text-align:center;
+
+}
+
+.status-panel span{
+
+    display:block;
+
+    color:#888;
+
+    font-size:.8rem;
+
+    letter-spacing:2px;
+
+}
+
+.status-panel strong{
+
+    color:var(--grbc-green-light);
+
+    font-size:1.1rem;
+
+}
