@@ -21,7 +21,7 @@ body{
     height:80vh;
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
-        url("gallery/page/GC_OG.png");
+        url("../gallery/page/GC_OG.png");
     background-size:cover;
     background-position:center;
     display:flex;
@@ -357,7 +357,7 @@ nav a{
 .weapons{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/winter_camo_002.png");
+        url("../gallery/page/winter_camo_002.png");
     background-size:cover;
     background-position:center;
 }
@@ -365,7 +365,7 @@ nav a{
 .groobycam{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/GC_OG.png");
+        url("../gallery/page/GC_OG.png");
     background-size:cover;
     background-position:center;
 }
@@ -373,7 +373,7 @@ nav a{
 .rangergreen{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/Mapa_1024x2048.png");
+        url("../gallery/page/Mapa_1024x2048.png");
     background-size:cover;
     background-position:center;
 }
@@ -381,7 +381,7 @@ nav a{
 .grbc{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/MC_1.png");
+        url("../gallery/page/MC_1.png");
     background-size:cover;
     background-position:center;
 }
@@ -389,7 +389,7 @@ nav a{
 .items{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/wz.93_Pantera.png");
+        url("../gallery/page/wz.93_Pantera.png");
     background-size:cover;
     background-position:center;
 }
@@ -397,7 +397,7 @@ nav a{
 .apparel{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/M81_Woodland.png");
+        url("../gallery/page/M81_Woodland.png");
     background-size:cover;
     background-position:center;
 }
@@ -405,7 +405,7 @@ nav a{
 .camos{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url("gallery/page/GC3_MC.png");
+        url("../gallery/page/GC3_MC.png");
     background-size:cover;
     background-position:center;
 }
