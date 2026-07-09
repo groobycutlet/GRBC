@@ -191,7 +191,7 @@ function renderResults(){
 
     filteredDocuments.forEach(document =>{
 
-        const card = createResultCard(document);
+        const card = createResultCard(doc);
 
         container.appendChild(card);
 
@@ -203,7 +203,7 @@ function renderResults(){
     RESULT CARD
 ==============================================================*/
 
-function createResultCard(document){
+function createResultCard(doc){
 
     const div = document.createElement("div");
 
