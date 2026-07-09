@@ -1,0 +1,36 @@
+{
+  "id":"STAG-001",
+
+  "title":"Weekly Supply Manifest",
+
+  "classification":"Restricted",
+
+  "era":"Relaxed",
+
+  "author":"Lt. Kowalski",
+
+  "location":"Research Site Delta",
+
+  "condition":"Water Damaged",
+
+  "tags":[
+      "convoy",
+      "checkpoint",
+      "resistance"
+  ],
+
+  "related":[
+      "RAD-004",
+      "AAR-002"
+  ],
+
+  "server_item":"Notebook_STAG_01",
+
+  "body":[
+
+      "Weekly convoy departed...",
+
+      "Resistance escort requested..."
+
+  ]
+}
