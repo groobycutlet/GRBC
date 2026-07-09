@@ -5,17 +5,19 @@
 
     "type": "STAG",
 
-    "classification": "Restricted",
+    "status": "available",
 
     "visibility": "public",
 
+    "classification": "Restricted",
+
     "era": "Relaxed",
 
-    "author": "Lt. M. Kowalski",
+    "author": "Lt. Marek Kowalski",
 
     "location": "Research Site Delta",
 
-    "condition": "Water damaged",
+    "condition": "Original",
 
     "confidence": "Confirmed",
 
@@ -25,21 +27,58 @@
 
     "unlockEvent": null,
 
+    "created": "Unknown",
+
+    "lastUpdated": "Archive Revision 1",
+
     "tags": [
-        "Convoy",
         "Supply",
+        "Convoy",
         "Resistance",
-        "Checkpoint"
+        "Checkpoint",
+        "Research Site Delta"
     ],
 
     "related": [
-        "RAD-0003",
-        "AAR-0002"
+        "RAD-0001",
+        "AAR-0001"
     ],
 
     "body": [
-        "Weekly convoy departed at 0800.",
-        "Resistance escort requested.",
-        "Recommend increasing ammunition allocation."
+
+        "WEEKLY SUPPLY MANIFEST",
+
+        "",
+
+        "Destination: Research Site Delta",
+
+        "Escort Requested: Resistance Cell Echo",
+
+        "",
+
+        "Priority Cargo:",
+
+        "- Medical Supplies",
+
+        "- Small Arms Ammunition",
+
+        "- Laboratory Equipment",
+
+        "- Fuel Drums",
+
+        "",
+
+        "Remarks:",
+
+        "Eastern approach continues to experience increased infected activity.",
+
+        "Recommend maintaining Resistance escort until further notice.",
+
+        "",
+
+        "Signed",
+
+        "Lt. Marek Kowalski"
+
     ]
 }
