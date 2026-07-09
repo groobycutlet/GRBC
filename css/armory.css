@@ -120,11 +120,15 @@ section{
 
     height:240px;
 
-    object-fit:cover;
+    object-fit:contain;
 
     cursor:pointer;
 
     transition:var(--transition);
+    
+    background:#2a2a2a;
+
+    padding:10px;
 
 }
 
