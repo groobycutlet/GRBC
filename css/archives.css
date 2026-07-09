@@ -1,1 +1,10 @@
-.hero{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.90)),url("../gallery/page/wz.93_Pantera.png");}
+.hero{
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.78),
+            rgba(0,0,0,.90)
+        ),
+        url("../gallery/page/wz.93_Pantera.png");
+
+}
