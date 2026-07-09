@@ -1065,11 +1065,28 @@
 
 <div id="lightbox" onclick="closeLightbox()">
 
-    <button class="lb-btn" onclick="prevImage(event)">❮</button>
+    <button class="lb-btn lb-close"
+            onclick="closeLightbox(); event.stopPropagation();">
+
+        ✕
+
+    </button>
+
+    <button class="lb-btn lb-prev"
+            onclick="prevImage(event)">
+
+        ❮
+
+    </button>
 
     <img id="lightbox-img">
 
-    <button class="lb-btn" onclick="nextImage(event)">❯</button>
+    <button class="lb-btn lb-next"
+            onclick="nextImage(event)">
+
+        ❯
+
+    </button>
 
 </div>
 
