@@ -337,13 +337,13 @@ section{
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+
+    align-items:flex-start;
 
     text-align:center;
 
-    padding:140px 20px 70px;
+    padding:170px 20px 70px;
 
     background-size:cover;
 
