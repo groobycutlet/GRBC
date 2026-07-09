@@ -1,15 +1,414 @@
-/* Armory-only */
-.hero{height:80vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),url("../gallery/page/GC_OG.png")}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,240px));justify-content:center;gap:20px}
-.gallery-item{background:#1a1a1a;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:var(--transition)}
-.gallery-item:hover{transform:translateY(-5px);border-color:var(--grbc-green-light)}
-.gallery-item img{width:100%;height:240px;object-fit:cover}
-.about-box,.commission-box,.coming-soon{background:#181818;border:1px solid var(--border);border-radius:10px}
-#lightbox{position:fixed;inset:0;display:none;justify-content:center;align-items:center;background:rgba(0,0,0,.92);z-index:99999}
-.weapons{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/winter_camo_002.png") center/cover}
-.groobycam{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/GC_OG.png") center/cover}
-.rangergreen{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/Mapa_1024x2048.png") center/cover}
-.grbc{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/MC_1.png") center/cover}
-.items{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/wz.93_Pantera.png") center/cover}
-.apparel{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/M81_Woodland.png") center/cover}
-.camos{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url("../gallery/page/GC3_MC.png") center/cover}
+/*==================================================================
+    G.R.B.C. COMMAND PORTAL
+
+    Armory Stylesheet
+    Version 2.0
+
+    Contains Armory-specific components only.
+==================================================================*/
+
+
+/*==================================================================
+    HERO BACKGROUND
+==================================================================*/
+
+.hero{
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.82)
+        ),
+        url("../gallery/page/GC_OG.png");
+
+}
+
+
+/*==================================================================
+    GALLERY GRID
+==================================================================*/
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(240px,240px));
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+/*==================================================================
+    GALLERY CARDS
+==================================================================*/
+
+.gallery-item{
+
+    background:#1A1A1A;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+
+.gallery-item:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--grbc-green-light);
+
+}
+
+
+.gallery-item img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+
+.gallery-item img:hover{
+
+    opacity:.9;
+
+    transform:scale(1.03);
+
+}
+
+
+.gallery-info{
+
+    padding:18px;
+
+}
+
+
+.gallery-info h3{
+
+    margin-bottom:10px;
+
+}
+
+
+.gallery-info p{
+
+    margin:0;
+
+}
+
+
+/*==================================================================
+    ABOUT SECTION
+==================================================================*/
+
+.about-box{
+
+    background:#181818;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+/*==================================================================
+    COMMISSION SECTION
+==================================================================*/
+
+.commission-box{
+
+    max-width:1200px;
+
+    margin:30px auto 0;
+
+    padding:25px;
+
+    text-align:center;
+
+    background:#181818;
+
+    border:1px solid var(--grbc-green);
+
+    border-radius:var(--radius);
+
+}
+
+
+.commission-links{
+
+    margin-top:18px;
+
+}
+
+
+.commission-links a{
+
+    margin:6px;
+
+}
+
+
+.commission-note{
+
+    margin-top:12px;
+
+    color:#888;
+
+    font-size:.85rem;
+
+}
+
+
+/*==================================================================
+    COMING SOON
+==================================================================*/
+
+.coming-soon{
+
+    display:none;
+
+    margin-top:40px;
+
+    padding:60px;
+
+    text-align:center;
+
+    background:#181818;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    font-size:2rem;
+
+    letter-spacing:3px;
+
+    color:#666;
+
+}
+
+
+/*==================================================================
+    LIGHTBOX
+==================================================================*/
+
+#lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:rgba(0,0,0,.92);
+
+    z-index:99999;
+
+    cursor:pointer;
+
+}
+
+
+#lightbox img{
+
+    max-width:95%;
+
+    max-height:95%;
+
+    border:2px solid var(--grbc-green);
+
+    border-radius:var(--radius);
+
+    box-shadow:0 0 30px rgba(0,0,0,.8);
+
+}
+
+
+#lightbox .lb-btn{
+
+    position:absolute;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:60px;
+
+    cursor:pointer;
+
+    padding:20px;
+
+}
+
+
+.lb-prev{
+
+    left:20px;
+
+}
+
+
+.lb-next{
+
+    right:20px;
+
+}
+
+
+/*==================================================================
+    CATEGORY BACKGROUNDS
+==================================================================*/
+
+.weapons{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/winter_camo_002.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.groobycam{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/GC_OG.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.rangergreen{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/Mapa_1024x2048.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.grbc{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/MC_1.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.items{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/wz.93_Pantera.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.apparel{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/M81_Woodland.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.camos{
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("../gallery/page/GC3_MC.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+/*==================================================================
+    ARMORY RESPONSIVE
+==================================================================*/
+
+@media (max-width:700px){
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-item img{
+
+        height:auto;
+
+    }
+
+    .about-box{
+
+        padding:30px;
+
+    }
+
+    .commission-box{
+
+        padding:20px;
+
+    }
+
+}
