@@ -1,0 +1,37 @@
+[
+    {
+        "id":"stag",
+        "title":"STAG Operational Records",
+        "file":"data/stag.json"
+    },
+
+    {
+        "id":"radio",
+        "title":"Signals Intelligence",
+        "file":"data/radio.json"
+    },
+
+    {
+        "id":"aar",
+        "title":"After Action Reports",
+        "file":"data/aar.json"
+    },
+
+    {
+        "id":"personnel",
+        "title":"Personnel & Dossiers",
+        "file":"data/personnel.json"
+    },
+
+    {
+        "id":"timeline",
+        "title":"Historical Timeline Fragments",
+        "file":"data/timeline.json"
+    },
+
+    {
+        "id":"declassified",
+        "title":"Declassified Intelligence",
+        "file":"data/declassified.json"
+    }
+]
