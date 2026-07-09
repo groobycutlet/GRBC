@@ -189,14 +189,13 @@ function renderResults(){
 
     }
 
-    filteredDocuments.forEach(document =>{
+    filteredDocuments.forEach(doc => {
 
         const card = createResultCard(doc);
 
         container.appendChild(card);
 
     });
-
 }
 
 /*==============================================================
