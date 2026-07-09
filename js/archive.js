@@ -94,6 +94,36 @@ async function loadCollection(){
 
     }
 
+    function showWelcomeScreen(){
+
+        const viewer = document.getElementById("viewer");
+
+        viewer.innerHTML = `
+
+            <div class="archive-empty">
+
+                <h2>Central Intelligence Archive</h2>
+
+                <p>
+
+                    No document selected.
+
+                </p>
+
+                <p>
+
+                    Select a document from the list on the left,
+                    or use the search bar above to locate an archive
+                    reference.
+
+                </p>
+
+            </div>
+
+        `;
+
+    }
+
 }
 
 /*==============================================================
