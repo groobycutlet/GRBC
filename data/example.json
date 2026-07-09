@@ -1,36 +1,45 @@
 {
-  "id":"STAG-001",
+    "id": "STAG-0001",
 
-  "title":"Weekly Supply Manifest",
+    "title": "Weekly Supply Manifest",
 
-  "classification":"Restricted",
+    "type": "STAG",
 
-  "era":"Relaxed",
+    "classification": "Restricted",
 
-  "author":"Lt. Kowalski",
+    "visibility": "public",
 
-  "location":"Research Site Delta",
+    "era": "Relaxed",
 
-  "condition":"Water Damaged",
+    "author": "Lt. M. Kowalski",
 
-  "tags":[
-      "convoy",
-      "checkpoint",
-      "resistance"
-  ],
+    "location": "Research Site Delta",
 
-  "related":[
-      "RAD-004",
-      "AAR-002"
-  ],
+    "condition": "Water damaged",
 
-  "server_item":"Notebook_STAG_01",
+    "confidence": "Confirmed",
 
-  "body":[
+    "revision": 1,
 
-      "Weekly convoy departed...",
+    "serverItem": "Notebook_STAG_01",
 
-      "Resistance escort requested..."
+    "unlockEvent": null,
 
-  ]
+    "tags": [
+        "Convoy",
+        "Supply",
+        "Resistance",
+        "Checkpoint"
+    ],
+
+    "related": [
+        "RAD-0003",
+        "AAR-0002"
+    ],
+
+    "body": [
+        "Weekly convoy departed at 0800.",
+        "Resistance escort requested.",
+        "Recommend increasing ammunition allocation."
+    ]
 }
