@@ -214,23 +214,23 @@ function createResultCard(doc){
     `
     <div class="archive-result-id">
 
-        ${document.id}
+        ${doc.id}
 
     </div>
 
     <div class="archive-result-title">
 
-        ${document.title}
+        ${doc.title}
 
     </div>
 
     <div class="archive-result-meta">
 
-        ${document.classification}
+        ${doc.classification}
 
         •
 
-        ${document.location}
+        ${doc.location}
 
     </div>
     `;
