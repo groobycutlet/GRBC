@@ -76,11 +76,7 @@ async function loadCollection(){
 
         renderResults();
 
-        if(documents.length){
-
-            renderDocument(documents[0]);
-
-        }
+        showWelcomeScreen();
 
     }
 
