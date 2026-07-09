@@ -236,7 +236,7 @@ function createResultCard(doc){
 
     div.addEventListener("click", () =>{
 
-        window.document
+        document
             .querySelectorAll(".archive-result")
             .forEach(card =>{
 
@@ -342,7 +342,7 @@ function openRelated(id){
 
     renderDocument(doc);
 
-    window.document
+    document
         .querySelectorAll(".archive-result")
         .forEach(card=>{
 
