@@ -373,6 +373,56 @@ section{
 
 }
 
+/*==================================================================
+    HERO BUTTONS
+==================================================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:45px;
+
+}
+
+.hero-buttons a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:170px;
+
+    padding:12px 22px;
+
+    background:var(--grbc-green);
+
+    color:var(--text);
+
+    border-radius:6px;
+
+    transition:var(--transition);
+
+}
+
+.hero-buttons a:hover{
+
+    background:var(--grbc-green-light);
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+}
+
 
 /*==================================================================
     NAVIGATION
