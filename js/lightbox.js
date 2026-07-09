@@ -26,18 +26,25 @@ function updateGalleryImage() {
     document.getElementById("lightbox-img").src =
         galleryImages[currentImage];
 
-    const buttons =
-        document.querySelectorAll("#lightbox .lb-btn");
+    const prev =
+        document.querySelector(".lb-prev");
 
-    if (galleryImages.length <= 1) {
+    const next =
+        document.querySelector(".lb-next");
 
-        buttons.forEach(btn => btn.style.display = "none");
+    if (galleryImages.length <= 1){
 
-    } else {
-
-        buttons.forEach(btn => btn.style.display = "block");
+        prev.style.display = "none";
+        next.style.display = "none";
 
     }
+    else{
+
+        prev.style.display = "block";
+        next.style.display = "block";
+
+    }
+
 }
 
 function nextImage(event) {
