@@ -161,14 +161,15 @@
 
 .commission-links{
 
-    margin-top:18px;
+    display:flex;
 
-}
+    justify-content:center;
 
+    flex-wrap:wrap;
 
-.commission-links a{
+    gap:15px;
 
-    margin:6px;
+    margin-top:25px;
 
 }
 
