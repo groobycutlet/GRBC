@@ -1,0 +1,222 @@
+{
+    "collection": "STAG Operational Records",
+
+    "documents": [
+
+        {
+
+            "id": "STAG-0001",
+
+            "title": "Weekly Supply Manifest",
+
+            "classification": "Restricted",
+
+            "era": "Relaxed",
+
+            "author": "Lt. Marek Kowalski",
+
+            "location": "Research Site Delta",
+
+            "tags": [
+
+                "Supply",
+
+                "Convoy",
+
+                "Resistance"
+
+            ],
+
+            "related": [
+
+                "STAG-0002"
+
+            ],
+
+            "body": [
+
+                "Destination: Research Site Delta.",
+
+                "Priority cargo consists of medical supplies, fuel drums and laboratory equipment.",
+
+                "Resistance escort requested due to increased infected activity on the eastern approach.",
+
+                "Recommend maintaining escort until further notice."
+
+            ]
+
+        },
+
+        {
+
+            "id": "STAG-0002",
+
+            "title": "Escort Delay Report",
+
+            "classification": "Restricted",
+
+            "era": "Relaxed",
+
+            "author": "Sgt. H. Wallace",
+
+            "location": "Eastern Checkpoint",
+
+            "tags": [
+
+                "Escort",
+
+                "Checkpoint",
+
+                "Resistance"
+
+            ],
+
+            "related": [
+
+                "STAG-0001",
+
+                "STAG-0003"
+
+            ],
+
+            "body": [
+
+                "Resistance escort arrived approximately three hours behind schedule.",
+
+                "Convoy proceeded without incident.",
+
+                "Recommend increasing escort strength for future operations."
+
+            ]
+
+        },
+
+        {
+
+            "id": "STAG-0003",
+
+            "title": "Ammunition Request",
+
+            "classification": "Restricted",
+
+            "era": "Relaxed",
+
+            "author": "Lt. Marek Kowalski",
+
+            "location": "Research Site Delta",
+
+            "tags": [
+
+                "Ammunition",
+
+                "Logistics"
+
+            ],
+
+            "related": [
+
+                "STAG-0002",
+
+                "STAG-0004"
+
+            ],
+
+            "body": [
+
+                "Current ammunition estimates no longer reflect operational demand.",
+
+                "Recommend immediate increase of rifle and pistol ammunition allocation.",
+
+                "Current projections indicate shortages within two operational cycles."
+
+            ]
+
+        },
+
+        {
+
+            "id": "STAG-0004",
+
+            "title": "Missing Convoy",
+
+            "classification": "Restricted",
+
+            "era": "Decline",
+
+            "author": "Capt. M. Anders",
+
+            "location": "Sector East",
+
+            "tags": [
+
+                "Convoy",
+
+                "Missing",
+
+                "Supply"
+
+            ],
+
+            "related": [
+
+                "STAG-0005"
+
+            ],
+
+            "body": [
+
+                "Scheduled convoy Bravo failed to arrive.",
+
+                "No distress transmission received.",
+
+                "Search operation recommended pending HQ approval."
+
+            ]
+
+        },
+
+        {
+
+            "id": "STAG-0005",
+
+            "title": "Communications Failure",
+
+            "classification": "Restricted",
+
+            "era": "Decline",
+
+            "author": "Signals Officer J. Mercer",
+
+            "location": "Communications Relay Alpha",
+
+            "tags": [
+
+                "Radio",
+
+                "Communications",
+
+                "Signal"
+
+            ],
+
+            "related": [
+
+                "STAG-0004"
+
+            ],
+
+            "body": [
+
+                "Long range communications remain unreliable.",
+
+                "Signal degradation has increased significantly over the last reporting period.",
+
+                "Cause remains unknown."
+
+            ]
+
+        }
+
+    ]
+
+}
