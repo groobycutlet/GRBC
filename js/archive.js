@@ -397,3 +397,55 @@ function openRelated(id){
         });
 
 }
+
+/*==============================================================
+    WELCOME SCREEN
+==============================================================*/
+
+function showWelcomeScreen(){
+
+    const viewer = document.getElementById("viewer");
+
+    viewer.innerHTML = `
+
+        <div class="archive-empty">
+
+            <h2>Central Intelligence Archive</h2>
+
+            <div class="archive-empty-line"></div>
+
+            <h3>No Document Selected</h3>
+
+            <p>
+
+                Select a document from the list on the left,
+                or use the search box above to locate a
+                document by reference, title or keyword.
+
+            </p>
+
+            <div class="archive-empty-info">
+
+                <div>
+
+                    <span>Collection</span>
+
+                    <strong>${archiveData.collection}</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Documents</span>
+
+                    <strong>${documents.length}</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+
+}
