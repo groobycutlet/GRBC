@@ -276,64 +276,105 @@ section{
 
     align-items:center;
 
-    padding:20px;
-
     background:rgba(0,0,0,.92);
 
     z-index:99999;
 
-    cursor:pointer;
-
 }
-
 
 #lightbox img{
 
-    max-width:95%;
+    max-width:90%;
 
-    max-height:95%;
+    max-height:90%;
 
     border:2px solid var(--grbc-green);
 
     border-radius:var(--radius);
 
-    box-shadow:0 0 30px rgba(0,0,0,.8);
+    box-shadow:0 0 35px rgba(0,0,0,.8);
 
 }
 
 
-#lightbox .lb-btn{
+/*--------------------------------------------------------------
+    ALL BUTTONS
+--------------------------------------------------------------*/
+
+.lb-btn{
 
     position:absolute;
 
-    background:none;
+    width:60px;
+
+    height:60px;
 
     border:none;
 
+    border-radius:50%;
+
+    background:rgba(20,20,20,.85);
+
     color:white;
 
-    font-size:60px;
+    font-size:34px;
 
     cursor:pointer;
 
-    padding:20px;
+    transition:var(--transition);
 
 }
 
+.lb-btn:hover{
+
+    background:var(--grbc-green);
+
+}
+
+
+/*--------------------------------------------------------------
+    PREVIOUS
+--------------------------------------------------------------*/
 
 .lb-prev{
 
-    left:20px;
+    left:35px;
+
+    top:50%;
+
+    transform:translateY(-50%);
 
 }
 
+
+/*--------------------------------------------------------------
+    NEXT
+--------------------------------------------------------------*/
 
 .lb-next{
 
-    right:20px;
+    right:35px;
+
+    top:50%;
+
+    transform:translateY(-50%);
 
 }
 
+
+/*--------------------------------------------------------------
+    CLOSE
+--------------------------------------------------------------*/
+
+.lb-close{
+
+    right:35px;
+
+    top:35px;
+
+    font-size:28px;
+
+}
 
 /*==================================================================
     CATEGORY BACKGROUNDS
