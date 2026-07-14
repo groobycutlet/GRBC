@@ -46,6 +46,8 @@ const ArchiveLoader = {
             ).textContent = json.collection;
 
             ArchiveUI.showWelcome();
+            /* Initialise the search controls */
+            ArchiveSearch.initialise();
 
         }
 
