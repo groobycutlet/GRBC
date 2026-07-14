@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G.R.B.C. Central Intelligence Archive</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/archive.css">
+</head>
+<body>
+
+<nav>
+<div class="nav-container">
+<a href="index.html" class="logo">
+<img src="gallery/page/GRBC_Logo_Simple.png" alt="G.R.B.C.">
+<span>G.R.B.C.</span>
+</a>
+
+<div class="nav-links">
+<a href="armory.html">Armory</a>
+<a href="archives.html" class="active">Archives</a>
+<a href="#">Quartermaster</a>
+<a href="#">Contracting</a>
+<a href="#">Communications</a>
+</div>
+</div>
+</nav>
+
+<header class="archive-header">
+<h1>Central Intelligence Archive</h1>
+<h2 id="collectionTitle">Loading Collection...</h2>
+</header>
+
+<section class="archive-query">
+<label for="searchBox">Archive Query</label>
+
+<div class="search-row">
+<input id="searchBox" type="text"
+placeholder="Enter archive reference or keyword...">
+<button id="searchButton">SEARCH</button>
+</div>
+</section>
+
+<section class="query-results">
+<h3>Query Results</h3>
+<div id="results">
+<div class="archive-placeholder">
+Awaiting query...
+</div>
+</div>
+</section>
+
+<section class="archive-viewer">
+<div id="viewer">
+<div class="archive-placeholder">
+<h2>No Document Selected</h2>
+<p>Enter an archive reference or keyword above, then press SEARCH.</p>
+</div>
+</div>
+</section>
+
+<script src="js/archive.js"></script>
+
+</body>
+</html>
