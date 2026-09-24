@@ -21,7 +21,7 @@
 
 }
 
-.status-inactive {
+.status-box strong.status-inactive {
     color: #ff3333;
     text-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
 }
